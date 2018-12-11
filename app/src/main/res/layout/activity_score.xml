@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundpage"
+
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_below="@+id/flags"
+        android:layout_marginTop="30dp"
+        android:padding="30dp"
+        android:elevation="4dp"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="Best score"
+            android:textStyle="italic"
+            />
+        <ListView
+            android:id="@+id/listRanking"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
