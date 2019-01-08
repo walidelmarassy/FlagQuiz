@@ -7,11 +7,23 @@
         android:padding="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/imagetop"
+            android:background="@drawable/goldmedal"
             android:layout_width="50dp"
             android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/txttop"
+
+            android:gravity= "center"
+            android:text="1000"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
 
     </LinearLayout>
 

@@ -37,9 +37,9 @@ public class Done extends AppCompatActivity {
         Bundle extra=getIntent().getExtras();
         if (extra!=null)
         {
-            int score=extra.getInt("score");
+            int score=extra.getInt("Score");
             int totalquestion=extra.getInt("Total");
-            int correctAnswer=extra.getInt("correctAnswer");
+            int correctAnswer=extra.getInt("CorrectAnswer");
             textscore.setText(String.format("Score:%d",score));
             texttotalquestion.setText(String.format("passed:%d/%d",correctAnswer,totalquestion));
             progressBar.setMax(totalquestion);

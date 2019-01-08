@@ -215,7 +215,7 @@ public class DbHelper extends SQLiteOpenHelper {
             if (c==null)return null;
             c.moveToNext();
             do {
-                int Id=c.getInt(c.getColumnIndex("id"));
+                int Id=c.getInt(c.getColumnIndex("Id"));
                 int Score=c.getInt(c.getColumnIndex("Score"));
                 Ranking ranking=new Ranking(Id,Score);
                 listRanking.add(ranking);

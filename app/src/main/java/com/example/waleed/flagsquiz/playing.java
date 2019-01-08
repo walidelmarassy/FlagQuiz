@@ -118,12 +118,10 @@ Button btnA,btnB,btnC,btnD;
 
         }
         else {
-            Intent intent=new Intent(this,Done.class);
-            Bundle datasend=new Bundle();
-            datasend.putInt("Score",score);
-            datasend.putInt("Total",totalquestion);
-            datasend.putInt("CorrectAnswer",correctanswer);
-            intent.putExtras(datasend);
+            Intent intent=new Intent(playing.this,Done.class);
+            intent.putExtra("Score",score);
+            intent.putExtra("Total",totalquestion);
+            intent.putExtra("CorrectAnswer",correctanswer);
             startActivity(intent);
             finish();
 
